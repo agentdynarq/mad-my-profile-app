@@ -7,7 +7,7 @@ import '../models/user_profile.dart';
 /// A [ValueNotifier] keeps the screen free of setState calls and makes the
 /// award rules easy to test without pumping any widgets.
 class ProfileController extends ValueNotifier<UserProfile> {
-  ProfileController(super.profile);
+  ProfileController(UserProfile profile) : super(profile);
 
   /// Points handed out per tap of the floating action button.
   static const int pointsPerAward = 1;
