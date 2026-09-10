@@ -27,7 +27,7 @@ class ProfileAvatar extends StatelessWidget {
             height: radius * 2,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: theme.colorScheme.surfaceContainerHighest,
+              color: theme.colorScheme.secondaryContainer,
               border: Border.all(color: theme.dividerColor, width: 2),
             ),
             alignment: Alignment.center,
@@ -35,7 +35,7 @@ class ProfileAvatar extends StatelessWidget {
               initial,
               style: theme.textTheme.displaySmall?.copyWith(
                 fontWeight: FontWeight.w600,
-                color: theme.colorScheme.onSurface,
+                color: theme.colorScheme.onSecondaryContainer,
               ),
             ),
           ),
