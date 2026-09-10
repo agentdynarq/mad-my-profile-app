@@ -8,20 +8,12 @@ Module: Mobile Application Development, NSBM, Semester 5.
 
 ## Screen
 
-```
- My Profile                       (app bar, centred, refresh action)
- ---------------------------------
-            (  avatar  )
- _________________________________
- Name
- RMS Hasitha Bandara
+![My Profile screen](docs/screenshot.png)
 
- Email
- hasitha@dynarq.com
-
- Points
- 0                                       ( + )  floating action button
-```
+App bar with a centred title and a reset action, avatar with a verified badge,
+a divider, then the Name, Email and Points rows. The floating action button
+adds a point. The shot above is the web build, which picks up the dark theme
+from the system setting; on a phone in light mode the same screen is white.
 
 ## Layout of the code
 
@@ -67,3 +59,6 @@ flutter test
 
 Six tests: three on `ProfileController` (award, cap, reset) and three widget
 tests (details render, the button raises the counter, refresh clears it).
+
+Verified on Flutter 3.47.3 stable with Dart 3.13.3: `flutter analyze` reports
+no issues and all 6 tests pass.
